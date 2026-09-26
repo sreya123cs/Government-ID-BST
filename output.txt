@@ -1,0 +1,119 @@
+============================================
+   GOVERNMENT IDENTIFICATION DATABASE (BST)
+============================================
+
+Insertion Order:
+A102 A25 A7 B100 B12 A120 B3 A45 
+
+a) Inorder Traversal of BST (sorted order):
+A102 A120 A25 A45 A7 B100 B12 B3 
+
+BST Height (levels): 6
+
+Tree Structure (indented view):
+
+ROOT: A102
+    \--R: A25
+        /--L: A120
+        \--R: A7
+            /--L: A45
+            \--R: B100
+                \--R: B12
+                    \--R: B3
+
+Tree Structure (top-down "/  \" view):
+
+A102_____
+         \
+       _A25____
+      /        \
+    A120     _A7__
+            /     \
+           A45  B100_
+                     \
+                    B12_
+                        \
+                       B3
+
+============================================
+b) BST SEARCH vs LINEAR SEARCH COMPARISON
+============================================
+
+ID         Depth    BST Compares   Linear Compares 
+------------------------------------------------------
+A102       1        1              1               
+A25        2        2              2               
+A7         3        3              3               
+B100       4        4              4               
+B12        5        5              5               
+A120       3        3              6               
+B3         6        6              7               
+A45        4        4              8               
+C99        -        6              8                  (not found)
+
+--------------------------------------------
+Enter an ID to search (or press Ctrl+D to skip): 
+PS C:\Users\sreya\Desktop\New folder\Government-ID-BST> gcc government_id_bst.c -o government_id_bst.exe
+PS C:\Users\sreya\Desktop\New folder\Government-ID-BST> .\government_id_bst.exe                         
+============================================
+   GOVERNMENT IDENTIFICATION DATABASE (BST)
+============================================
+
+Insertion Order:
+A102 A25 A7 B100 B12 A120 B3 A45 
+
+a) Inorder Traversal of BST (sorted order):
+A102 A120 A25 A45 A7 B100 B12 B3 
+
+BST Height (levels): 6
+
+Tree Structure (indented view):
+
+ROOT: A102
+    \--R: A25
+        /--L: A120
+        \--R: A7
+            /--L: A45
+            \--R: B100
+                \--R: B12
+                    \--R: B3
+
+Tree Structure (top-down "/  \" view):
+
+A102_____
+         \
+       _A25____
+      /        \
+    A120     _A7__
+            /     \
+           A45  B100_
+                     \
+                    B12_
+                        \
+                       B3
+
+============================================
+b) BST SEARCH vs LINEAR SEARCH COMPARISON
+============================================
+
+ID         Depth    BST Compares   Linear Compares 
+------------------------------------------------------
+A102       1        1              1               
+A25        2        2              2               
+A7         3        3              3               
+B100       4        4              4               
+B12        5        5              5               
+A120       3        3              6               
+B3         6        6              7               
+A45        4        4              8               
+C99        -        6              8                  (not found)
+
+--------------------------------------------
+Enter an ID to search (or press Ctrl+D to skip): A45
+
+BST Search Result   : A45 Found (Comparisons: 4)
+Linear Search Result: A45 Found (Comparisons: 8)
+
+--- Performance Verdict ---
+BST Search performed better for this key.
+PS C:\Users\sreya\Desktop\New folder\Government-ID-BST> 
